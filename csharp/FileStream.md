@@ -1,3 +1,12 @@
+# FileStream
+
+## FileStreamとは
+FileStreamとは、Streamの一種で、Fileの読み書きを行う為オブジェクトである。
+
+> ToDo
+> FileStreanオブジェクトと、読み書きそれぞれのオブジェクト(StreamWriter, StreamReader)が分かれているのは意味があるのか。
+> 重要なポイントは、FileStreamオブジェクトで事足りるわけだから、わざわざ分ける方法を選ぶいみはないと感じている。
+> 何か、分けることに意義があるなら今後のコーディングの糧にしたい。
 
 
 ## 参考
