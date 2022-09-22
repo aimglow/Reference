@@ -15,9 +15,9 @@
 ```csh
 join -t , -j 1 -o 1.2,1.1,2.4,2.5 file1.csv file2.csv
 ```
-うまく結合できない場合は、一度awkコマンドで列を入れ替えるといい。
+うまく結合できない場合は、awkコマンドなどで列を入れ替えることで先頭列にキーを移動させ、sortを行うとよい。
 ```csh
-cat file1.csv | awk -F, '{print $2","$1","$3}' | sort  #ex: $2がキーの場合
+cat file1.csv | awk -F, '{print $2","$1","$3}' | sort > file1.csv.tmp  #ex: $2がキーの場合
 ```
 
 ## 2. awkコマンド
