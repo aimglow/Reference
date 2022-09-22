@@ -12,11 +12,11 @@
 ## 1. joinコマンド
 ２つのファイルをキーを元に結合する。（簡易的なJOIN）
 注意：キーがソートされている必要がある。
-```csh,bash,sh
+```csh
 join -t , -j 1 -o 1.2,1.1,2.4,2.5 file1.csv file2.csv
 ```
 うまく結合できない場合は、一度awkコマンドで列を入れ替えるといい。
-```csh,bash,sh
+```csh
 cat file1.csv | awk -F, '{print $2","$1","$3}' | sort  #ex: $2がキーの場合
 ```
 
