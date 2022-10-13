@@ -1,3 +1,6 @@
+//https://learn.microsoft.com/ja-jp/visualstudio/vsto/how-to-programmatically-search-for-text-in-worksheet-ranges
+
+
 private void DemoFind() 
     {
         Excel.Range currentFind = null; 
@@ -32,3 +35,7 @@ private void DemoFind()
             currentFind = Fruits.FindNext(currentFind); 
         }
 			}
+			
+
+//https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel.range.replace?view=excel-pia
+public bool Replace (object What, object Replacement, object LookAt, object SearchOrder, object MatchCase, object MatchByte, object SearchFormat, object ReplaceFormat);
